@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="telephone=no,email=no" name="format-detection" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<style type="text/css">
+			.section {
+				font-size: 40px;
+				color: #333;
+			}
+
+			#ss {
+				height: auto !important;
+			}
+
+			#ss div {
+				height: auto !important;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="common/css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="plugins/wow.js/css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="home/css/home.css" />
+		<link rel="stylesheet" type="text/css" href="common/css/commons.css" />
+		<link rel="stylesheet" type="text/css" href="plugins/swiper/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="plugins/fullpage/css/fullpage.css" />
+		<script src="common/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/fullpage/js/fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/swiper/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="home/js/home.js" type="text/javascript" charset="utf-8"></script>
+		<!--[if lt IE 9]>
+		 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		 <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<body>
+			<div class="warp_nav">
+				<div class="nav flex ">
+					<h1 class="logo ">
+						<a href="# "><img src="common/images/logo.jpg"></a>
+					</h1>
+					<div class="nav_menu" id="menu">
+						<span class="block ">
+						</span>
+					</div>
+					<div class="nav_content" id="nav">
+						<ul class="nav_con flex">
+							<li><a href="#">首页</a></li>
+							<li><a href="#">关于达利</a></li>
+							<li><a href="#">旗下品牌</a></li>
+							<li><a href="#">豆本豆</a></li>
+							<li><a href="#">乐虎</a></li>
+							<li><a href="#">新闻资讯</a></li>
+							<li><a href="#">社会责任</a></li>
+							<li><a href="#">创新研发</a></li>
+							<li><a href="#">投资者关系</a></li>
+							<li><a href="#">营销服务</a></li>
+						</ul>
+					</div>
+					<div class="small_nav" id="small_nav">
+						<ul class="nav_con" id="a">
+							<li><a href="#">首页</a></li>
+							<li><a href="#">关于达利</a></li>
+							<li><a href="#">旗下品牌</a></li>
+							<li><a href="#">豆本豆</a></li>
+							<li><a href="#">乐虎</a></li>
+							<li><a href="#">新闻资讯</a></li>
+							<li><a href="#">社会责任</a></li>
+							<li><a href="#">创新研发</a></li>
+							<li><a href="#">投资者关系</a></li>
+							<li class="no_border"><a href="#">营销服务</a></li>
+						</ul>
+					</div>
+					<script type="text/javascript ">
+						$(document).ready(function() {
+							$("#menu").click(function() {
+								$('#menu').toggleClass('on');
+								$('#nav').toggleClass('on navbg');
+								$('#change_language').toggleClass('fc');
+								$('#lan_bg').toggleClass('bg');
+								$('#small_nav').toggleClass('block');
+							});
+						});
+					</script>
+					<div class="right_top flex">
+						<div class="language" id="lan_bg">
+							<span class="le_show language_1" id="change_language">简体中文</span>
+							<span class="le_show language_2" id="change_language">CN</span>
+							<ul class="le_hidden" id="hidden_language">
+								<li><a href="#">简体中文</a></li>
+								<li><a href="#">English</a></li>
+							</ul>
+							<script type="text/javascript">
+								$(document).on("click", "#change_language", function() {
+									$("#hidden_language").slideToggle(200)
+								})
+							</script>
+						</div>
+						<div class="shop">
+							<img src="common/images/gwc.png" id="btn_img">
+							<ul id="hidden_img">
+								<li><a href="#"><img src="common/images/nav01.jpg"></a></li>
+								<li><a href="#"><img src="common/images/nav02.jpg"></a></li>
+								<li><a href="#"><img src="common/images/nav03.jpg"></a></li>
+								<li><a href="#"><img src="common/images/nav04.jpg"></a></li>
+							</ul>
+						</div>
+
+						<div class="search">
+							<img src="common/images/search.png" id="bth-img">
+							<form class="flex" id="nav_form">
+								<input class="input_search" type="text" placeholder="请输入关键字..." />
+								<input class="input_btn" type="button" value="搜索" />
+							</form>
+						</div>
+						<script type="text/javascript">
+							$("#hidden_img").hide()
+							$(document).on("click", "#btn_img", function() {
+								$("#hidden_img").slideToggle(500)
+							});
+							$("#nav_form").hide()
+							$(document).on("click", "#bth-img", function() {
+								$("#nav_form").slideToggle(300)
+							})
+						</script>
+					</div>
+				</div>
+			</div>
+			<!-- menu菜单  anchor 锚点-->
+			<div id="fullpage" class="pages black">
+				<div class="section page1">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div id="sm_bg" class="bg_none">
+									<video class="hide_video" id="viode1" width="100%" height="" autoplay loop muted>
+										<source src="mp4/doubendou.mp4" type="video/mp4">
+										</source>
+										当前浏览器不支持 video直接播放，点击这里下载视频
+									</video>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div id="sm_bg2" class="bg_none">
+									<video class="hide_video" id="viode2" width="100%" height="" autoplay loop muted>
+										<source src="mp4/lehu.mp4" type="video/mp4">
+										</source>
+										当前浏览器不支持 video直接播放，点击这里下载视频
+									</video>
+								</div>
+							</div>
+						</div>
+						<script type="text/javascript ">
+							$(document).ready(function() {
+								$("#sm_bg").click(function() {
+									$('#viode1').toggleClass('bgnone1');
+								});
+								$("#sm_bg2").click(function() {
+									$('#viode2').toggleClass('bgnone2');
+								});
+							});
+							document.getElementById("sm_bg").onclick = function() {
+								this.style.background = "none";
+							};
+							document.getElementById("sm_bg2").onclick = function() {
+								this.style.background = "none"
+							}
+						</script>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination">
+
+						</div>
+					</div>
+
+					<!-- Initialize Swiper -->
+					
+				</div>
+				<div class="section page2" id="second">
+					<div class="duclo" id="bg4">
+						<div style="background-image: url(common/images/bg1.jpg);" class="rel">
+							<!-- <span style="background-image: url(/UserFiles/upload/image/20190701/20190701152731261.jpg);"></span> -->
+						</div>
+						<div style="background-image: url(common/images/bg2.jpg);" class="rel">
+							<!-- <span style="background-image: url(/UserFiles/upload/image/20190701/20190701152731261.jpg);"></span> -->
+						</div>
+						<div style="background-image: url(common/images/bg3.jpg);" class="rel">
+							<!-- <span style="background-image: url(/UserFiles/upload/image/20190701/20190701152731261.jpg);"></span> -->
+						</div>
+						<div style="background-image: url(common/images/bg4.jpg);" class="rel">
+							<!-- <span style="background-image: url(/UserFiles/upload/image/20190701/20190701152731261.jpg);"></span> -->
+						</div>
+					</div>
+					<div class="padd">
+						<h1 class="normal-font" id="home_p1">达利食品集团</h1>
+						<p class="p1" id="home_p2">利食品集团1989年创立至今，已30年，建立了达利园、好吃点、可比克、乐虎、和其正、豆本豆、美焙辰七大知名品牌。</p>
+						<p class="more">
+							<a href="#" id="weburl">MORE</a>
+						</p>
+						<ul class="flex " id="slolc">
+							<li><a href="#" class="flex">
+									<div class="pic">
+										<img src="./common/images/20190524094436743.png">
+										<p class="txt_none">达利食品集团
+											<p />
+									</div>
+									<div class="text">
+										<p class="d1">达利食品集团</p>
+										<p class="d2">达利食品集团1989年创立至今，已30年，建立了达利园、好吃点、可比克、乐虎、和其正、豆本豆、美焙辰七大知名品牌。</p>
+									</div>
+								</a></li>
+							<li><a href="#" class="flex">
+									<div class="pic">
+										<img src="common/images/20190524094501215.png">
+										<p class="txt_none">董事长寄语
+											<p />
+									</div>
+									<div class="text">
+										<p class="d1">董事长寄语</p>
+										<p class="d2">
+											以产业定位品牌，实施多品牌战略。缔造品质生活，引领行业发展，建立综合性现代化食品企业集团；这是达利的未来愿景，也是时代赋予达利的使命；我们将以国际化的眼光和标准，用心把品质做好，用心把品牌做强，用心把企业做大。
+										</p>
+									</div>
+								</a></li>
+							<li><a href="#" class="flex">
+									<div class="pic">
+										<img src="common/images/20190524094523921.png">
+										<p class="txt_none">发展历程</p>
+									</div>
+									<div class="text">
+										<p class="d1">发展历程</p>
+										<p class="d2">达利食品集团1989年创立至今，已30年。2015年，在香港港股上市。</p>
+									</div>
+								</a></li>
+							<li class="last"><a href="#" class="flex">
+									<div class="pic">
+										<img src="common/images/20190606143743382.png">
+										<p class="txt_none">企业文化</p>
+									</div>
+									<div class="text">
+										<p class="d1">企业文化</p>
+										<p class="d2">用心创品质，达利集团用心苛求品质，诚信经营，把质量作为企业对消费者的承诺，用心使消费者安心，用心使消费者称心</p>
+									</div>
+								</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="section page3" id="third">
+					<div class="padd">
+						<h1 class="">多品牌战略</h1>
+						<p class="p1">Multi-brand strategy</p>
+						<div class="img_box">
+							<ul class="flex">
+								<li class="small"><a href="#">
+										<div><img src="common/images/dly.jpg"></div>
+									</a></li>
+								<li class="small"><a href="#">
+										<div><img src="common/images/kbk.jpg" alt=""></div>
+									</a></li>
+								<li class="small"><a href="#">
+										<div><img src="common/images/hcd.jpg" alt=""></div>
+									</a></li>
+								<li class="small"><a href="#">
+										<div><img src="common/images/mpc.jpg" alt=""></div>
+									</a></li>
+								<li class="big"><a href="#">
+										<div><img src="common/images/dbd.jpg" alt=""></div>
+									</a></li>
+								<li class="big"><a href="#">
+										<div><img src="common/images/lh.jpg" alt=""></div>
+									</a></li>
+								<li class="big"><a href="#">
+										<div><img src="common/images/hqz.jpg" alt=""></div>
+									</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="section page4" id="fourthly">
+					<div class="padd">
+						<div class="clearfix top">
+							<div class="fl top_fl">
+								<h1 class="">新闻资讯</h1>
+								<p class="p1">News Center</p>
+							</div>
+							<div class="fr top_fr clearfix">
+								<a href="#">集团资质</a>
+								<a href="#">行内新闻</a>
+								<a href="#">媒体报告</a>
+							</div>
+						</div>
+						<div class="content clearfix">
+							<div class="fl">
+								<div class="swiper-container myswiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+										<div class="swiper-slide">
+											<img src="common/images/lb1.jpg" >
+										</div>
+									</div>
+									<!-- Add Pagination -->
+									<div class="swiper-pagination">
+								
+									</div>
+								</div>
+									<!-- 分页器 -->
+									
+									<!-- 按钮 -->
+								<script>
+									var swiper = new Swiper('.myswiper', {
+										spaceBetween: 30,
+										centeredSlides: true,
+										autoplay: {
+											delay: 6500,
+											disableOnInteraction: false,
+										},
+										pagination: {
+											el: '.swiper-pagination',
+											clickable: true,
+										},
+										navigation: {
+											nextEl: '.swiper-button-next',
+											prevEl: '.swiper-button-prev',
+										},
+									});
+									var swiper = new Swiper('.swiper-container', {
+										spaceBetween: 30,
+										centeredSlides: true,
+										autoplay: {
+											delay: 6500,
+											disableOnInteraction: false,
+										},
+										pagination: {
+											el: '.swiper-pagination',
+											clickable: true,
+										},
+										navigation: {
+											nextEl: '.swiper-button-next',
+											prevEl: '.swiper-button-prev',
+										},
+									});
+								</script>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section page5" id="ss">sssss</div>
+				</div>
+				
+			</div>
+			<script type="text/javascript">
+				var myFullpage = new fullpage('#fullpage', {
+					anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+					menu: "#myMenu",
+					navigation: false,
+				});
+			</script>
+		</body>
+	</body>
+
+</html>

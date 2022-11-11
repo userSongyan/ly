@@ -1,0 +1,92 @@
+// 定义属性名
+// 盒子
+@d:display;
+@wd:width;
+@ht:height;
+@tt:transition;
+@mg:margin;
+@pdd:padding;
+@pdd-l:padding-left;
+@pdd-r:padding-right;
+@mar-r:margin-right;
+@mar-t:margin-top;
+// flex box
+@a-sf:align-self;
+@jc:justify-content;
+@sb:space-between;
+
+//
+@op:opacity;
+// 行高 
+@l-height:line-height;
+//字体
+@fs:font-size;
+@fc:color;
+@td:text-decoration;
+//文本居中
+@ta:text-align;
+//背景
+@bp:background-position;
+@bc:background-color;
+// 定义属性值
+@cr:center;
+// 定义图片 背景图路径
+@imgurl:"../../common/images/";
+// 定位
+@pos:position;
+@re:relative;
+@ab:absolute;
+// common
+.bg_ground_np(@file) {
+  background: url('@{file}');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover
+}
+.bg_ground_p(@file) {
+  background: url('@{file}');
+  background-position: center center;
+  background-size: cover
+}
+//边框圆角
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+.border(all,@color:red){
+	border: 1px solid @color;
+}
+.border(b-l,@color:red){
+	border-left:1px solid @color;
+}
+.border(b-r,@color:red){
+	border-right:1px solid @color;
+}
+.border(b-t,@color:red){
+	border-top:1px solid @color;
+}
+.border(b-b,@color:red){
+	border-bottom:1px solid @color;
+}
+.border3(all,@color:red){
+	border:3px solid @color;
+}
+// .border3(b-l,@color:red){
+// 	border-left:3px solid @color;
+// }
+// .border3(b-r,@color:red){
+// 	border-right:3px solid @color;
+// }
+// .border3(b-t,@color:red){
+// 	border-top:3px solid @color;
+// }
+// .border3(b-b,@color:red){
+// 	border-bottom:3px solid @color;
+// }
+.hover(@color,@bg){
+  color: @color;
+  background-color:@bg;
+}
+// 字体
+.fz(@fz, @h, @lh: @h ,@cr) { font-size: @fz; height: @h; line-height: @lh; color: @cr; }

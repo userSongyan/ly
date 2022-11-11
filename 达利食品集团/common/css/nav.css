@@ -1,0 +1,294 @@
+.warp_nav {
+  width: 100%;
+  position: fixed;
+  z-index: 222;
+}
+.warp_nav .nav {
+  position: relative;
+}
+.warp_nav .nav .logo {
+  position: relative;
+}
+.warp_nav .nav .logo img {
+  display: block;
+  min-width: 144px;
+}
+@media screen and (max-width: 1200px) {
+  .warp_nav .nav .logo img {
+    width: 144px !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.warp_nav .nav .logo a {
+  display: block;
+  height: 69px;
+}
+@media screen and (max-width: 1200px) {
+  .warp_nav .nav .logo a {
+    height: 50px;
+  }
+}
+.warp_nav .nav .nav_menu {
+  width: 69px;
+  height: 69px;
+  background-color: #01479d;
+  position: relative;
+}
+.warp_nav .nav .nav_menu span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 29px;
+  height: 18px;
+  background: url("../../common/images/s3.png") no-repeat;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 1200px) {
+  .warp_nav .nav .nav_menu {
+    width: 50px;
+    height: 50px;
+  }
+}
+.warp_nav .nav .navbg {
+  background: #fff;
+}
+.warp_nav .nav .nav_content {
+  width: 100%;
+}
+@media (max-width: 1720px) {
+  .warp_nav .nav .nav_content {
+    padding-left: 10px;
+  }
+}
+.warp_nav .nav .nav_content .nav_con {
+  width: 660px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  align-self: center;
+  margin-top: 10px;
+  height: 69px;
+  justify-content: space-between;
+  padding-right: 40%;
+  padding-left: 10px;
+  background-color: transparent;
+}
+@media (max-width: 1720px) {
+  .warp_nav .nav .nav_content .nav_con {
+    height: 50px;
+  }
+}
+.warp_nav .nav .nav_content .nav_con li {
+  align-self: center;
+}
+.warp_nav .nav .nav_content .nav_con li a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+.warp_nav .nav .nav_content .nav_con li a:hover {
+  color: #276ac3;
+}
+@media screen and (min-width: 1200px) {
+  .warp_nav .nav .small_nav {
+    z-index: -4 !important;
+    display: none;
+  }
+}
+.warp_nav .nav .on span {
+  background-position: 0 100%;
+  transition: all 0.5s ease;
+}
+.warp_nav .nav .on .nav_con {
+  opacity: 1 !important;
+}
+.warp_nav .nav .right_top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.warp_nav .nav .right_top .shop {
+  position: relative;
+  height: 69px;
+}
+@media screen and (max-width: 1200px) {
+  .warp_nav .nav .right_top .shop {
+    width: 50px;
+    height: 50px;
+  }
+}
+.warp_nav .nav .right_top .shop img {
+  display: block;
+  width: 100%;
+}
+.warp_nav .nav .right_top .shop #hidden_img {
+  position: absolute;
+  top: 104% ;
+  left: 0;
+}
+@media screen and (max-width: 1440px) {
+  .warp_nav .nav .right_top .shop {
+    display: none;
+  }
+}
+.warp_nav .nav .right_top .search {
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .warp_nav .nav .right_top .search {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .warp_nav .nav .right_top .search {
+    display: none;
+  }
+}
+.warp_nav .nav .right_top .search img {
+  display: block;
+  width: 100%;
+}
+.warp_nav .nav .right_top .search form {
+  position: absolute;
+  top: calc(100% - 4px);
+  right: 0;
+}
+.warp_nav .nav .right_top .search form input {
+  border: 0px;
+  outline: none;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+}
+.warp_nav .nav .right_top .search form input:focus {
+  border: 0;
+}
+.warp_nav .nav .right_top .search form .input_search {
+  padding: 0 10px;
+}
+.warp_nav .nav .right_top .search form .input_btn {
+  width: 50px;
+  background-color: #ef5a02;
+  color: white;
+}
+.warp_nav .nav .right_top .bg .le_show {
+  background: url("../../common/images/v2.png") no-repeat left center !important;
+}
+.warp_nav .nav .right_top .language {
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+.warp_nav .nav .right_top .language .le_show {
+  display: block;
+  align-self: center;
+  padding-left: 35px;
+  padding-right: 25px;
+  color: #fff;
+  margin-right: 25px;
+  line-height: 69px;
+  background: url("../../common/images/v1.png") no-repeat left center;
+  z-index: 2;
+}
+@media screen and (max-width: 1200px) {
+  .warp_nav .nav .right_top .language .le_show {
+    line-height: 50px;
+  }
+}
+.warp_nav .nav .right_top .language .language_2 {
+  display: none;
+}
+@media screen and (max-width: 638px) {
+  .warp_nav .nav .right_top .language .language_2 {
+    display: block;
+  }
+  .warp_nav .nav .right_top .language .language_1 {
+    display: none;
+  }
+}
+.warp_nav .nav .right_top .language .le_hidden {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.warp_nav .nav .right_top .language .le_hidden li {
+  width: 80px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  background-color: #fff;
+}
+.warp_nav .nav .right_top .language .le_hidden li:hover a {
+  color: #276ac3;
+  background-color: #fff;
+}
+.warp_nav .nav .right_top .language .le_hidden li a {
+  color: #666;
+  font-size: 14px;
+}
+.warp_nav .nav .right_top .language .fc {
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  .warp_nav .nav {
+    position: relative;
+    background-color: #fff;
+  }
+  .warp_nav .nav .nav_content {
+    display: none;
+  }
+  .warp_nav .nav .small_nav {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #fff;
+    transition: all 0.5s;
+    top: 50px;
+    left: 0;
+  }
+  .warp_nav .nav .small_nav .nav_con {
+    width: 100%;
+  }
+  .warp_nav .nav .small_nav .nav_con li {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    text-align: left;
+    height: 46px;
+    line-height: 46px;
+  }
+  .warp_nav .nav .small_nav ul li {
+    padding-left: 2%;
+  }
+  .warp_nav .nav .block {
+    display: block;
+  }
+  .warp_nav .nav .nav_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .warp_nav .nav .right_top {
+    margin-right: 50px;
+  }
+  .warp_nav .nav .right_top .language .le_show {
+    background: none;
+    color: black;
+    padding-right: 0;
+    margin-right: 15px;
+  }
+  .warp_nav .nav .right_top .shop {
+    display: block;
+  }
+  .warp_nav .nav .right_top .search {
+    display: block;
+  }
+  .warp_nav .nav .right_top .reveal {
+    display: block;
+  }
+}

@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.block {
+	display: block;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.no_border {
+	border: 0px;
+}
+
+.normal-font {
+	font-weight: normal;
+	font-style: normal;
+}
+.padd{
+	padding: 0 3.5%;
+	padding-top: 100px;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float: right;
+}
+.clearfix::after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
